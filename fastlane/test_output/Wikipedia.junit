@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='WikipediaUnitTests.xctest' tests='384' failures='1'>
+  <testsuite name='WikipediaUnitTests.ArticleAsLivingDocViewModelTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.ArticleAsLivingDocViewModelTests' name='testNewTalkPageTopicCorrectlyInstantiates' time='0.021'/>
+    <testcase classname='WikipediaUnitTests.ArticleAsLivingDocViewModelTests' name='testSmallViewModelCorrectlyInstantiates' time='0.007'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.ArticleCacheReadingTests' tests='4' failures='0'>
+    <testcase classname='WikipediaUnitTests.ArticleCacheReadingTests' name='testBasicArticleLoad' time='0.925'/>
+    <testcase classname='WikipediaUnitTests.ArticleCacheReadingTests' name='testBasicNetworkFailureWithCachedArticle' time='0.206'/>
+    <testcase classname='WikipediaUnitTests.ArticleCacheReadingTests' name='testBasicNetworkNotModifiedWithCachedArticle' time='0.194'/>
+    <testcase classname='WikipediaUnitTests.ArticleCacheReadingTests' name='testVariantFallbacksUponNetworkFailure' time='0.216'/>
+  </testsuite>
+  <testsuite name='CLLocation_WMFBearingTests' tests='5' failures='0'>
+    <testcase classname='CLLocation_WMFBearingTests' name='testShouldHaveANorthwestBearingFromMosconeToGoldenGate' time='0.001'/>
+    <testcase classname='CLLocation_WMFBearingTests' name='testShouldHaveNoBearingToSelf' time='0.000'/>
+    <testcase classname='CLLocation_WMFBearingTests' name='testShouldHaveNorthBearingFromMosconeToCoitTower' time='0.000'/>
+    <testcase classname='CLLocation_WMFBearingTests' name='testShouldHaveSouthEastBearingFromMosconeToDogpatch' time='0.000'/>
+    <testcase classname='CLLocation_WMFBearingTests' name='testShouldHaveSouthwestBearingFromMosconeToTwinPeaks' time='0.000'/>
+  </testsuite>
+  <testsuite name='CircularBitwiseRotationTests' tests='2' failures='0'>
+    <testcase classname='CircularBitwiseRotationTests' name='testMatchesCorrespondingPowerOfTwo' time='0.000'/>
+    <testcase classname='CircularBitwiseRotationTests' name='testSymmetrical' time='0.001'/>
+  </testsuite>
+  <testsuite name='CodeFileLocationTests' tests='1' failures='0'>
+    <testcase classname='CodeFileLocationTests' name='test_code_files_are_not_in_root_folder' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.CollectionAsyncMapTests' tests='7' failures='0'>
+    <testcase classname='WikipediaUnitTests.CollectionAsyncMapTests' name='testAsyncCompactMapResultsAreMappedToCorrectItemsEvenIfReceivedOutOfOrder' time='0.485'/>
+    <testcase classname='WikipediaUnitTests.CollectionAsyncMapTests' name='testAsyncForEachPerformsBlockForEachItem' time='0.375'/>
+    <testcase classname='WikipediaUnitTests.CollectionAsyncMapTests' name='testAsyncMapResultsAreMappedToCorrectItemsEvenIfReceivedOutOfOrder' time='0.221'/>
+    <testcase classname='WikipediaUnitTests.CollectionAsyncMapTests' name='testAsyncMapToDictionary' time='0.328'/>
+    <testcase classname='WikipediaUnitTests.CollectionAsyncMapTests' name='testAsyncMapToDictionaryWithLargeInput' time='0.535'/>
+    <testcase classname='WikipediaUnitTests.CollectionAsyncMapTests' name='testLargeAsyncCompactMap' time='0.015'/>
+    <testcase classname='WikipediaUnitTests.CollectionAsyncMapTests' name='testLargeAsyncMap' time='0.015'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.DataStoreTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.DataStoreTests' name='testInitialMigrationCreatesDefaultReadingList' time='0.037'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.Date_ExtensionTests' tests='3' failures='0'>
+    <testcase classname='WikipediaUnitTests.Date_ExtensionTests' name='testBeforeAfter' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.Date_ExtensionTests' name='testPicturePageTitle' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.Date_ExtensionTests' name='testShortDateStringFormatterForNotifications' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.LocaleTests' tests='3' failures='0'>
+    <testcase classname='WikipediaUnitTests.LocaleTests' name='testLanguageVariants' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.LocaleTests' name='testLocaleHeader' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.LocaleTests' name='testZHHeaders' time='0.000'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.LocationManagerTests' tests='18' failures='0'>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='test_UIDevice_BeingEndGeneratingDeviceOrientation_IsCalled' time='0.002'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testAuthorizedStateChangesArePropagated' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testAuthorizedStatus' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testCoarseLocationManager' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testDeviceHeadingUpdates' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testExistingHeadingIsUsedWhenAvailable' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testExistingLocationIsUsedWhenAvailable' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testFineLocationManager' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testMonitoringStopsWhenDeallocated' time='0.004'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testReceivingError' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testStartLocationWithoutPermission' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testStartMonitoring' time='0.004'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testStartMonitoringCalledWhenAuthorizationDeniedAndThenAuthorized' time='0.004'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testStartMonitoringCalledWhenAuthorizationSuccessfull' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testStopMonitoring' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testStopUpdating' time='0.004'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testUpdateHeading' time='0.003'/>
+    <testcase classname='WikipediaUnitTests.LocationManagerTests' name='testUpdateLocation' time='0.002'/>
+  </testsuite>
+  <testsuite name='MWKLanguageLinkControllerTests' tests='12' failures='0'>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testBasicFiltering' time='0.037'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testContentLanguageCodeProperty' time='0.034'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testDefaultsToDevicePreferredLanguages' time='0.031'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testDuplicateLanguageCodeFiltering' time='0.034'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testEmptyAfterFiltering' time='0.031'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testLanguageCodeForISOLanguageCode' time='0.031'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testLanguagesPropertiesAreNonnull' time='0.066'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testLanguageVariantCodeURLPropagation' time='0.037'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testPreferredLanguageVariantForLanguageCode' time='0.066'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testReadPreviouslySelectedLanguagesReturnsEmpty' time='0.031'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testSaveSelectedLanguageUpdatesTheControllersFilteredPreferredLanguages' time='0.035'/>
+    <testcase classname='MWKLanguageLinkControllerTests' name='testUniqueAppendToPreferredLanguages' time='0.035'/>
+  </testsuite>
+  <testsuite name='NSDictionaryBlocksKitTest' tests='6' failures='0'>
+    <testcase classname='NSDictionaryBlocksKitTest' name='testMap' time='0.000'/>
+    <testcase classname='NSDictionaryBlocksKitTest' name='testMatch' time='0.000'/>
+    <testcase classname='NSDictionaryBlocksKitTest' name='testReject' time='0.000'/>
+    <testcase classname='NSDictionaryBlocksKitTest' name='testRejectedAll' time='0.000'/>
+    <testcase classname='NSDictionaryBlocksKitTest' name='testSelect' time='0.000'/>
+    <testcase classname='NSDictionaryBlocksKitTest' name='testSelectedNone' time='0.000'/>
+  </testsuite>
+  <testsuite name='NSSetBlocksKitTest' tests='8' failures='0'>
+    <testcase classname='NSSetBlocksKitTest' name='testMap' time='0.000'/>
+    <testcase classname='NSSetBlocksKitTest' name='testMatch' time='0.000'/>
+    <testcase classname='NSSetBlocksKitTest' name='testNotMatch' time='0.000'/>
+    <testcase classname='NSSetBlocksKitTest' name='testReduceWithBlock' time='0.000'/>
+    <testcase classname='NSSetBlocksKitTest' name='testReject' time='0.000'/>
+    <testcase classname='NSSetBlocksKitTest' name='testRejectedAll' time='0.000'/>
+    <testcase classname='NSSetBlocksKitTest' name='testSelect' time='0.000'/>
+    <testcase classname='NSSetBlocksKitTest' name='testSelectedNone' time='0.000'/>
+  </testsuite>
+  <testsuite name='NSString_FormattedAttributedStringTests' tests='1' failures='0'>
+    <testcase classname='NSString_FormattedAttributedStringTests' name='testComplexAttributedStringCreation' time='0.001'/>
+  </testsuite>
+  <testsuite name='NSString_WMFHTMLParsingTests' tests='14' failures='0'>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testAllWhitepacesCollapsing' time='0.001'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testBracketedContentRemoval' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testConsecutiveNewlinesCollapsing' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testConsecutiveSpacesCollapsing' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testNestedParenthesesRemoval' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testNewsNotificationHTMLRemoving' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testPunctuationAwareWhitespaceCollapsingCommasSemicolonsAndPeriods' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testPunctuationAwareWhitespaceCollapsingLeadingAndTrailingWhitespace' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testPunctuationAwareWhitespaceCollapsingReduceWhitespaceAroundParenthesisOrBrackets' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testRemovalOfLeadingOrTrailingSpacesNewlinesOrColons' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testRemovalOfSpaceBeforeCommaAndSemicolon' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testRemovalOfSpaceBeforePeriod' time='0.000'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testRemovingHTMLRetainsMinusEntity' time='0.001'/>
+    <testcase classname='NSString_WMFHTMLParsingTests' name='testSnippetFromTextWithCitaiton' time='0.000'/>
+  </testsuite>
+  <testsuite name='NSURLExtrasTests' tests='9' failures='0'>
+    <testcase classname='NSURLExtrasTests' name='testMimeTypeWithGIFExtension' time='0.001'/>
+    <testcase classname='NSURLExtrasTests' name='testMimeTypeWithJPEGExtension' time='0.001'/>
+    <testcase classname='NSURLExtrasTests' name='testMimeTypeWithPNGExtension' time='0.000'/>
+    <testcase classname='NSURLExtrasTests' name='testOptionalURLReturnsNilForEmptyString' time='0.000'/>
+    <testcase classname='NSURLExtrasTests' name='testOptionalURLReturnsNilForNilString' time='0.000'/>
+    <testcase classname='NSURLExtrasTests' name='testPrependSchemeAddHTTPSToSchemelessURL' time='0.000'/>
+    <testcase classname='NSURLExtrasTests' name='testPrependSchemeReturnsOriginalURLWithScheme' time='0.000'/>
+    <testcase classname='NSURLExtrasTests' name='testSchemelessURLIsEqualToAbsoluteStringOfURLWithoutScheme' time='0.000'/>
+    <testcase classname='NSURLExtrasTests' name='testSchemelessURLStringPreservesEverythingExceptSchemeAndColon' time='0.000'/>
+  </testsuite>
+  <testsuite name='NSURL_WMFLinkParsingTests' tests='14' failures='0'>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testAbsoluteExternalLink' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testAbsoluteInternalLink' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testAbsoluteInternalLinkWithOtherComponents' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testCitationURL' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testInternalLinkPath' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testInternalLinkPathForURLExcludesFragmentAndQuery' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testLanguageVariantCodeProperty' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testLanguageVariantCodePropertyFromURLComponents' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testRelativeExternalLink' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testRelativeInternalLink' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testTalkPageDatabaseKeyEN' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testTalkPageDatabaseKeyES' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testURLWithFragmentNotContainingCitaitonSubstringIsNotCitation' time='0.000'/>
+    <testcase classname='NSURL_WMFLinkParsingTests' name='testURLWithoutFragmentIsNotCitation' time='0.000'/>
+  </testsuite>
+  <testsuite name='NSURL_WMFQueryParametersTests' tests='7' failures='0'>
+    <testcase classname='NSURL_WMFQueryParametersTests' name='testAddingValueAndQueryKeyToURLWithoutAnyQueryKeys' time='0.001'/>
+    <testcase classname='NSURL_WMFQueryParametersTests' name='testChangingValueForQueryKeyWithoutChangingOtherKeysOrValues' time='0.000'/>
+    <testcase classname='NSURL_WMFQueryParametersTests' name='testValueForQueryKeyForURLNoQueryParameters' time='0.000'/>
+    <testcase classname='NSURL_WMFQueryParametersTests' name='testValueForQueryKeyForURLWithKeyButNoValueForIt' time='0.000'/>
+    <testcase classname='NSURL_WMFQueryParametersTests' name='testValueForQueryKeyForURLWithMultipleQueryParameters' time='0.000'/>
+    <testcase classname='NSURL_WMFQueryParametersTests' name='testValueForQueryKeyForURLWithSingleQueryParameter' time='0.000'/>
+    <testcase classname='NSURL_WMFQueryParametersTests' name='testValueForUnfoundQueryKeyForURLWithMultipleQueryParameters' time='0.000'/>
+  </testsuite>
+  <testsuite name='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' tests='7' failures='0'>
+    <testcase classname='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' name='testArticleURL' time='0.002'/>
+    <testcase classname='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' name='testExploreURL' time='0.001'/>
+    <testcase classname='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' name='testHistoryURL' time='0.001'/>
+    <testcase classname='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' name='testInvalidArticleURLReturnsNil' time='0.000'/>
+    <testcase classname='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' name='testSavedURL' time='0.001'/>
+    <testcase classname='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' name='testSearchURL' time='0.001'/>
+    <testcase classname='NSUserActivity_WMFExtensions_wmf_activityForWikipediaScheme_Test' name='testURLWithoutWikipediaSchemeReturnsNil' time='0.000'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationServiceHelperTest' tests='3' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationServiceHelperTest' name='testAllNotificationsForSameTalkPage' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.NotificationServiceHelperTest' name='testDetermineNotificationsToDisplayAndCache' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.NotificationServiceHelperTest' name='testTalkPageContent' time='0.002'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelEditMilestoneTests' tests='3' failures='1'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelEditMilestoneTests' name='testEditMilestoneHundredOnUserTalkPage'>
+      <failure message='XCTAssertEqual failed: (&quot;Optional(&quot;7/17/21&quot;)&quot;) is not equal to (&quot;Optional(&quot;7/16/21&quot;)&quot;) - Invalid dateText'>
+        WikipediaUnitTests/Code/Notifications
+        Tests/NotificationsCenterCellViewModelEditMilestoneTests.swift:120
+      </failure>
+    </testcase>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelEditMilestoneTests' name='testEditMilestoneOneOnUserPage' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelEditMilestoneTests' name='testEditMilestoneTenOnArticle' time='0.004'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelEditRevertedTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelEditRevertedTests' name='testEditRevertedOnArticleEdit' time='0.009'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelEditRevertedTests' name='testEditRevertedOnUserTalkEdit' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelGenericTests' tests='3' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelGenericTests' name='testFlowReply' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelGenericTests' name='testFlowTopicRenamed' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelGenericTests' name='testPageReview' time='0.005'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelLoginIssuesTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelLoginIssuesTests' name='testLoginFailKnownDevice' time='0.004'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' tests='9' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionFailureAnonymous' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionFailureNotFound' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionInArticleTalk' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionInArticleTalkEditSummary' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionInArticleTalkZhWikiquote' time='0.008'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionInUserTalk' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionInUserTalkEditSummary' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionSuccess' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelMentionTests' name='testMentionSuccessWikidata' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelPageLinkTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelPageLinkTests' name='testPageLink' time='0.007'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelThanksTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelThanksTests' name='testThanksOnArticleEdit' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelThanksTests' name='testThanksOnUserTalkEdit' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelUserGroupRightsChangeTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelUserGroupRightsChangeTests' name='testUserRightsChange' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelUserTalkMessageTests' tests='6' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelUserTalkMessageTests' name='testUserTalkPageGenericAnonymousMessage' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelUserTalkMessageTests' name='testUserTalkPageGenericMessage' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelUserTalkMessageTests' name='testUserTalkPageMediaWikiMessage' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelUserTalkMessageTests' name='testUserTalkPageSpecificAnonymousMessage' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelUserTalkMessageTests' name='testUserTalkPageSpecificMessage' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelUserTalkMessageTests' name='testUserTalkPageSpecificTruncatedMessage' time='0.007'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelWelcomeTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelWelcomeTests' name='testWelcome' time='0.005'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterCellViewModelWikidataConnectionTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterCellViewModelWikidataConnectionTests' name='testWikidataConnection' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelEditMilestoneTests' tests='3' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelEditMilestoneTests' name='testEditMilestoneHundredOnUserTalkPage' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelEditMilestoneTests' name='testEditMilestoneOneOnUserPage' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelEditMilestoneTests' name='testEditMilestoneTenOnArticle' time='0.004'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelEditRevertedTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelEditRevertedTests' name='testEditRevertedOnArticleEdit' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelEditRevertedTests' name='testEditRevertedOnUserTalkEdit' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelGenericTests' tests='3' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelGenericTests' name='testFlowReply' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelGenericTests' name='testFlowTopicRenamed' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelGenericTests' name='testPageReview' time='0.005'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelLoginIssuesTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelLoginIssuesTests' name='testLoginFailKnownDevice' time='0.004'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' tests='9' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionFailureAnonymous' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionFailureNotFound' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionInArticleTalk' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionInArticleTalkEditSummary' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionInArticleTalkZhWikiquote' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionInUserTalk' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionInUserTalkEditSummary' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionSuccess' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelMentionTests' name='testMentionSuccessWikidata' time='0.005'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelPageLinkTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelPageLinkTests' name='testPageLink' time='0.005'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelThanksTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelThanksTests' name='testThanksOnArticleEdit' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelThanksTests' name='testThanksOnUserTalkEdit' time='0.005'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelUserGroupRightsChangeTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelUserGroupRightsChangeTests' name='testUserRightsChange' time='0.005'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelUserTalkMessageTests' tests='6' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelUserTalkMessageTests' name='testUserTalkPageGenericAnonymousMessage' time='0.007'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelUserTalkMessageTests' name='testUserTalkPageGenericMessage' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelUserTalkMessageTests' name='testUserTalkPageMediaWikiMessage' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelUserTalkMessageTests' name='testUserTalkPageSpecificAnonymousMessage' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelUserTalkMessageTests' name='testUserTalkPageSpecificMessage' time='0.006'/>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelUserTalkMessageTests' name='testUserTalkPageSpecificTruncatedMessage' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelWelcomeTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelWelcomeTests' name='testWelcome' time='0.004'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NotificationsCenterDetailViewModelWikidataConnectionTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NotificationsCenterDetailViewModelWikidataConnectionTests' name='testWikidataConnection' time='0.006'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.NumberFormatterExtrasTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.NumberFormatterExtrasTests' name='testThousands' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.OldTalkPageFetcherTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.OldTalkPageFetcherTests' name='testTalkPageFetchReturnsTalkPage' time='0.012'/>
+    <testcase classname='WikipediaUnitTests.OldTalkPageFetcherTests' name='testTalkPageFetchWithPrefixTitleReturnsTalkPage' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.QuadKeyTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.QuadKeyTests' name='testInvalidQuadKeys' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.QuadKeyTests' name='testQuadKeys' time='0.619'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.ReadingListsTests' tests='6' failures='0'>
+    <testcase classname='WikipediaUnitTests.ReadingListsTests' name='testAddingArticlesToExistingReadingList' time='0.052'/>
+    <testcase classname='WikipediaUnitTests.ReadingListsTests' name='testAddingDuplicateArticlesToExistingReadingList' time='0.025'/>
+    <testcase classname='WikipediaUnitTests.ReadingListsTests' name='testCreatingReadingListWithArticles' time='0.028'/>
+    <testcase classname='WikipediaUnitTests.ReadingListsTests' name='testDeletingExistingReadingLists' time='0.023'/>
+    <testcase classname='WikipediaUnitTests.ReadingListsTests' name='testDeletingNonexistentReadingLists' time='0.020'/>
+    <testcase classname='WikipediaUnitTests.ReadingListsTests' name='testListsWithTheSameName' time='0.024'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.SectionEditorFindAndReplaceTests' tests='6' failures='0'>
+    <testcase classname='WikipediaUnitTests.SectionEditorFindAndReplaceTests' name='testFindNextIncreasesSearchStateCursor' time='0.840'/>
+    <testcase classname='WikipediaUnitTests.SectionEditorFindAndReplaceTests' name='testFindNextIncrementsMatchLabel' time='0.802'/>
+    <testcase classname='WikipediaUnitTests.SectionEditorFindAndReplaceTests' name='testFindResultsStartingFromMidArticleUpdateToMatchLabel' time='0.774'/>
+    <testcase classname='WikipediaUnitTests.SectionEditorFindAndReplaceTests' name='testFindResultsUpdateToMatchLabel' time='0.760'/>
+    <testcase classname='WikipediaUnitTests.SectionEditorFindAndReplaceTests' name='testNoFindResultsUpdateToMatchLabel' time='0.738'/>
+    <testcase classname='WikipediaUnitTests.SectionEditorFindAndReplaceTests' name='testReplacingFirstInstanceChangesText' time='0.775'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.ShortDescriptionControllerTests' tests='2' failures='0'>
+    <testcase classname='WikipediaUnitTests.ShortDescriptionControllerTests' name='testDetectShortDescription' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.ShortDescriptionControllerTests' name='testReplaceShortDescription' time='0.000'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.SignificantEventsFetcherTests' tests='5' failures='0'>
+    <testcase classname='WikipediaUnitTests.SignificantEventsFetcherTests' name='testFetchBeginningProducesSignificantEvents' time='0.005'/>
+    <testcase classname='WikipediaUnitTests.SignificantEventsFetcherTests' name='testFetchFirstPageProducesSignificantEvents' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.SignificantEventsFetcherTests' name='testFetchMaxCacheProducesSignificantEvents' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.SignificantEventsFetcherTests' name='testFetchSubsequentPageProducesSignificantEvents' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.SignificantEventsFetcherTests' name='testFetchTemplatesProducesSignificantEvents' time='0.001'/>
+  </testsuite>
+  <testsuite name='TWNStringsTests' tests='13' failures='0'>
+    <testcase classname='TWNStringsTests' name='testAllSupportedTranslatedLanguagesWereAddedToProjectLocalizations' time='0.005'/>
+    <testcase classname='TWNStringsTests' name='testIncomingTranslationStringForBracketSubstitutions' time='0.085'/>
+    <testcase classname='TWNStringsTests' name='testIncomingTranslationStringForBracketSubstitutionsNotPresentInEN' time='0.007'/>
+    <testcase classname='TWNStringsTests' name='testIncomingTranslationStringForHTML' time='0.039'/>
+    <testcase classname='TWNStringsTests' name='testIncomingTranslationStringForNBSP' time='0.086'/>
+    <testcase classname='TWNStringsTests' name='testIncomingTranslationStringForPercentTokens' time='0.104'/>
+    <testcase classname='TWNStringsTests' name='testIncomingTranslationStringForReversedSubstitutionShortcuts' time='0.091'/>
+    <testcase classname='TWNStringsTests' name='testiOSTranslationCommentsForMentionOfEachSubstitution' time='0.006'/>
+    <testcase classname='TWNStringsTests' name='testiOSTranslationStringForBracketSubstitutionsAndMismatchedTokens' time='0.114'/>
+    <testcase classname='TWNStringsTests' name='testiOSTranslationStringForReversedSubstitutionShortcuts' time='0.240'/>
+    <testcase classname='TWNStringsTests' name='testiOSTranslationStringForTWNSubstitutionShortcuts' time='0.040'/>
+    <testcase classname='TWNStringsTests' name='testKeysForUnderscores' time='0.037'/>
+    <testcase classname='TWNStringsTests' name='testLprojCount' time='0.000'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.TalkPageControllerTests' tests='4' failures='0'>
+    <testcase classname='WikipediaUnitTests.TalkPageControllerTests' name='testFetchDifferentUserSameLanguageAddsMultipleTalkPageRecords' time='0.238'/>
+    <testcase classname='WikipediaUnitTests.TalkPageControllerTests' name='testFetchSameRevisionIdDoesNotCallFetcher' time='0.111'/>
+    <testcase classname='WikipediaUnitTests.TalkPageControllerTests' name='testFetchSameUserDifferentLanguageAddsMultipleTalkPageRecords' time='0.157'/>
+    <testcase classname='WikipediaUnitTests.TalkPageControllerTests' name='testInitialFetchSavesRecordInDB' time='0.089'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.TalkPageLocalHandlerTests' tests='3' failures='0'>
+    <testcase classname='WikipediaUnitTests.TalkPageLocalHandlerTests' name='testCreateFirstTalkPageSavesToDatabase' time='0.058'/>
+    <testcase classname='WikipediaUnitTests.TalkPageLocalHandlerTests' name='testExistingTalkPagePullsFromDB' time='0.059'/>
+    <testcase classname='WikipediaUnitTests.TalkPageLocalHandlerTests' name='testUpdateExistingTalkPageUpdatesValues' time='0.124'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.TalkPageNetworkDataTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.TalkPageNetworkDataTests' name='testLocalJsonDecodesToTalkPage' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.URLParsingAndRoutingTests' tests='25' failures='0'>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testCaret' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testCommonsCompatibilityAdjustments' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testContentLanguageCodeProperty' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testInvalidCompatibilityAdjustment' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testLanguageVariantCodeProperty' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testLanguageVariantCodePropertyFromURLComponents' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testMainPage' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testNamespace' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testQuestionMark' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testQuestionMarkInPath' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersEncodedOffWiki' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersEncodedOnAnotherWiki' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersEncodedOnCommons' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersEncodedOnWiki' time='0.002'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersEncodedWithQuestionMark' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersUnencodedOffWiki' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersUnencodedOnAnotherWiki' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersUnencodedOnCommons' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersUnencodedOnWiki' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testSpecialCharactersUnencodedWithQuestionMark' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testTitlesWithForwardSlashes' time='0.008'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testWikipediaCompatibilityAdjustments' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testWikiResourcePath' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testWikiResourcePathActivity' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.URLParsingAndRoutingTests' name='testWResourcePath' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.URL_ExtensionTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.URL_ExtensionTests' name='testOpenInSafari' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.WMFArticleCollectionViewCell' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.WMFArticleCollectionViewCell' name='testHighlightFontSizeMatchesNonHighlightFontSizeForAllDynamicTypeSizes' time='0.001'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.WMFArticleTests' tests='10' failures='0'>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testArticleTemporaryCacheKey' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeEmptyReadingLists' time='0.010'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeExistingIsExcludedFromFeed' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeIsExcludedFromFeed' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeNilSavedDate' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeNonNilSavedDate' time='0.001'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeNonNilViewedDate' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeReadingLists' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeSavedDate' time='0.000'/>
+    <testcase classname='WikipediaUnitTests.WMFArticleTests' name='testMergeViewedDates' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFBlocksKitTests' tests='3' failures='0'>
+    <testcase classname='WMFBlocksKitTests' name='testMatch' time='0.000'/>
+    <testcase classname='WMFBlocksKitTests' name='testNils' time='0.000'/>
+    <testcase classname='WMFBlocksKitTests' name='testSelect' time='0.000'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.WMFDatabaseHousekeeperTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.WMFDatabaseHousekeeperTests' name='testDaysBefore' time='0.001'/>
+  </testsuite>
+  <testsuite name='WMFDateCalculationTests' tests='16' failures='0'>
+    <testcase classname='WMFDateCalculationTests' name='testComponentsBetweenOver24Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testComponentsBetweenUnder24Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testComponentsBetweenUnder48Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testComponentsBetweenWrapMonths' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testDaysBetweenOver24Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testDaysBetweenUnder24Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testDaysBetweenUnder48Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testDaysBetweenWrapMonths' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringDifferentDayUnder24Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringSameDayUnder12Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringSameDayUnder12HoursSingular' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringSameDayUnder1Hour' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringSameDayUnder1Minute' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringSameDayUnder24Hours' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringTwoDaysAgo' time='0.000'/>
+    <testcase classname='WMFDateCalculationTests' name='testRelativeDateStringYesterday' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFDateFormatterTests' tests='3' failures='0'>
+    <testcase classname='WMFDateFormatterTests' name='testIso8601Example' time='0.000'/>
+    <testcase classname='WMFDateFormatterTests' name='testShortTimeFormatterExamples' time='0.001'/>
+    <testcase classname='WMFDateFormatterTests' name='testShortTimeFormatterIsValidForAllLocales' time='0.204'/>
+  </testsuite>
+  <testsuite name='WMFGeometryTests' tests='4' failures='0'>
+    <testcase classname='WMFGeometryTests' name='testConcatTransforms' time='0.001'/>
+    <testcase classname='WMFGeometryTests' name='testCoordinateConversionOfRegularRect' time='0.000'/>
+    <testcase classname='WMFGeometryTests' name='testDistance' time='0.000'/>
+    <testcase classname='WMFGeometryTests' name='testNormalization' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFImageURLParsingTests' tests='48' failures='0'>
+    <testcase classname='WMFImageURLParsingTests' name='testImageWithMultiplePeriodsInFilename' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testImageWithOneExtensionExample' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testImageWithPeriodInFileNameExample' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testImageWithTwoExtensionsExample' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testNoPrefixExample' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testNormalizedEquality' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testNormalizedEscapedEquality' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testNormalizedImageWithPeriodInFileNameExample' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testNormalizedImageWithPeriodInFileNameFromURLExample' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testParseCanonicalFileNameWhenCanonicalFileIsPDF' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testParseCanonicalFileNameWhenCanonicalFileIsTIF_lossless' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testParseCanonicalFileNameWhenCanonicalFileIsTIF_lossy' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testParseImageNameFromCanonicalImageURLWithSizePrefixInFileName' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testParseImageNameFromURLofSVG' time='0.003'/>
+    <testcase classname='WMFImageURLParsingTests' name='testPrefixFromEmptyStringUrl' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testPrefixFromImageWithOneExtensionExample' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testPrefixFromNilUrl' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testPrefixFromNoPrefixFileName' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testPrefixFromUrlWithoutImageFileLastPathComponent' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testPrefixFromZeroWidthImage' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testResizePrefixChangeOnCanonicalImageURLWithSizePrefixInFileName' time='0.004'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChange_JPEG' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChange_jpeg' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnCanonicalImageURLWithSizePrefixInFileName' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnEmptyString' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnENWikiURL' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnlyEffectsLastPathComponent' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnNil' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnSingleSlashSingleCharacterString' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnSingleSlashString' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnSingleSpaceString' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnURLEndingWithWikipedia' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnURLEndingWithWikipediaAndDoubleSlashes' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnURLWithoutSizePrefix' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeOnURLWithSizePrefix' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsPDFWithoutSizePrefix' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsPDFWithSizePrefix' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsPDFWithSizePrefixPage2' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsTIFF_lowercase' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsTIFF_uppercase' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsTIFWithoutSizePrefix_lossy' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsTIFWithSizePrefix_lossless' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsTIFWithSizePrefix_lossy' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsTIFWithSizePrefixPage2_lossless' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixChangeWhenCanonicalFileIsTIFWithSizePrefixPage2_lossy' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixWhenCanonicalFileIsPDF' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixWhenCanonicalFileIsTIF_lossless' time='0.000'/>
+    <testcase classname='WMFImageURLParsingTests' name='testSizePrefixWhenCanonicalFileIsTIF_lossy' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFLinkParsingTests' tests='17' failures='0'>
+    <testcase classname='WMFLinkParsingTests' name='testContentLanguageCodeProperty' time='0.001'/>
+    <testcase classname='WMFLinkParsingTests' name='testEventLoggingLabel' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testEventLoggingLabelWithMultipleParams' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testQueryPreservation' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testTitlesWithSlashes' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFCanonicalMapping' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFCanonicalMappingURLComponents' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFDomain' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFDomainComponents' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFInternalLinks' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFLanguagelessLinks' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFLanguagelessMobileLinks' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFLinksFromLinks' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFMobileDomain' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFMobileDomainComponents' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFNormalizedTitleCanonicalMapping' time='0.000'/>
+    <testcase classname='WMFLinkParsingTests' name='testWMFSpecialCharacters' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFMTLModelSerializationTests' tests='5' failures='0'>
+    <testcase classname='WMFMTLModelSerializationTests' name='testFeedDayResponseLangaugeVariantPropagation' time='0.009'/>
+    <testcase classname='WMFMTLModelSerializationTests' name='testFeedOnThisDayEventLangaugeVariantPropagation' time='0.016'/>
+    <testcase classname='WMFMTLModelSerializationTests' name='testResultsAndRedirectsAreNonnullForZeroResultResponse' time='0.001'/>
+    <testcase classname='WMFMTLModelSerializationTests' name='testSearchResultsLangaugeVariantPropagation' time='0.002'/>
+    <testcase classname='WMFMTLModelSerializationTests' name='testSerializesPrefixResultsInOrderOfIndex' time='0.001'/>
+  </testsuite>
+  <testsuite name='WMFMathTests' tests='7' failures='0'>
+    <testcase classname='WMFMathTests' name='testClampReturnsSameResultWhenBoundsAreReversed' time='0.000'/>
+    <testcase classname='WMFMathTests' name='testRadiansToClock' time='0.000'/>
+    <testcase classname='WMFMathTests' name='testRounding' time='0.000'/>
+    <testcase classname='WMFMathTests' name='testStrictClampAssertsWhenGivenInvalidBounds' time='0.000'/>
+    <testcase classname='WMFMathTests' name='testStrictClampReturnsMaxWhenOutsideUpperBound' time='0.000'/>
+    <testcase classname='WMFMathTests' name='testStrictClampReturnsMinWhenOutsideLowerBound' time='0.000'/>
+    <testcase classname='WMFMathTests' name='testStrictClampReturnsValueIfWithinBounds' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFSafeAssignTests' tests='3' failures='0'>
+    <testcase classname='WMFSafeAssignTests' name='testAssigningNilToNil' time='0.000'/>
+    <testcase classname='WMFSafeAssignTests' name='testAssigningValueToNil' time='0.000'/>
+    <testcase classname='WMFSafeAssignTests' name='testAssigningValueToRef' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFSubstringUtilsTests' tests='3' failures='0'>
+    <testcase classname='WMFSubstringUtilsTests' name='testEmptyString' time='0.000'/>
+    <testcase classname='WMFSubstringUtilsTests' name='testGoesToIndex' time='0.000'/>
+    <testcase classname='WMFSubstringUtilsTests' name='testStopsAtLength' time='0.000'/>
+  </testsuite>
+  <testsuite name='WMFTaskGroupTests' tests='4' failures='0'>
+    <testcase classname='WMFTaskGroupTests' name='testEmptyGroup' time='0.101'/>
+    <testcase classname='WMFTaskGroupTests' name='testHang' time='1.046'/>
+    <testcase classname='WMFTaskGroupTests' name='testOverLeave' time='5.017'/>
+    <testcase classname='WMFTaskGroupTests' name='testSimple' time='2.016'/>
+  </testsuite>
+  <testsuite name='WikipediaUnitTests.WidgetSampleContentTests' tests='1' failures='0'>
+    <testcase classname='WikipediaUnitTests.WidgetSampleContentTests' name='testFeaturedArticleWidgetSampleContentDecoding' time='0.010'/>
+  </testsuite>
+</testsuites>
