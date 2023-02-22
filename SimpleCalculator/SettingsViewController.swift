@@ -18,6 +18,6 @@ class SettingsViewController: UIViewController {
     }
 
     @IBAction func toggleSwitch(_ sender: UISwitch) {
-        UserDefaults.standard.set(sender.isOn, forKey: "enableWaits")
+        UserDefaults.standard.set(sender.isOn, forKey: "switch")
     }
 }
