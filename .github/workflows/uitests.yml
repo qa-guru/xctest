@@ -31,7 +31,7 @@ jobs:
     timeout-minutes: 60
 
     env:
-      TEST_SIMULATOR: ${{ github.event.inputs.simulator  || '["iPhone 11"]' }}
+      TEST_SIMULATOR: ${{ github.event.inputs.simulator  || '["iPhone 14"]' }}
       ALLURE_ENDPOINT: ${{ secrets.TESTOPS_ENDPOINT_URL }}
       ALLURE_TOKEN: ${{ secrets.TESTOPS_TOKEN }}
 
@@ -40,7 +40,7 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v3
 
-    - name: Set up Ruby 💎
+    - name: Set up Ruby 3.0.5
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.0.5
@@ -64,7 +64,7 @@ jobs:
       run: bundle exec fastlane ios build_test_app
 
     - name: Run tests
-      run: bundle exec fastlane ios run_ui_tests
+      run: bundle exec fastlane ios run_ui_tests device:$TEST_SIMULATOR
 
     - name: Install xcresult 
       run: |
