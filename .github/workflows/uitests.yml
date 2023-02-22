@@ -69,18 +69,18 @@ jobs:
     # - name: Run tests
     #   run: bundle exec fastlane ios run_tests
 
-    # - name: Install xcresult 
-    #   run: |
-    #     wget https://github.com/eroshenkoam/xcresults/releases/latest/download/xcresults
-    #     chmod +x ./xcresults
+    - name: Install xcresult 
+      run: |
+        wget https://github.com/eroshenkoam/xcresults/releases/latest/download/xcresults
+        chmod +x ./xcresults
 
     # - name: Convert xcresult to allure results
     #   run: xcresults export ./test.xcresult ./allure-results
 
-    # - name: Install allurectl 
-    #   run: |
-    #     wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_darwin_amd64 -O ./allurectl
-    #     chmod +x ./allurectl
+    - name: Install allurectl 
+      run: |
+        wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_darwin_amd64 -O ./allurectl
+        chmod +x ./allurectl
 
     # - name: Export test results to TestOPS
     #   run: pwd

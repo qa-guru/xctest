@@ -1,5 +1,4 @@
 brew 'gmp'
 brew 'libyaml'
 brew 'aria2'
-brew 'swiftlint'
 brew 'wget'
