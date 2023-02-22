@@ -25,12 +25,19 @@ env:
   LANGUAGE: "en_US.UTF-8"
   LC_ALL: "en_US.UTF-8"
 
+
+
 jobs:
   all:
     runs-on: ${{ github.event.inputs.agent || 'macOS-latest' }}
+    timeout-minutes: 60
 
     env:
       TEST_SIMULATOR: ${{ github.event.inputs.simulator  || '["iPhone 11"]' }}
+      ALLURE_PROJECT_ID: ${{ env.TESTOPS_PROJECT_ID }}
+      ALLURE_ENDPOINT: ${{ secrets.TESTOPS_ENDPOINT_URL }}
+      ALLURE_TOKEN: ${{ secrets.TESTOPS_TOKEN }}
+
 
     steps:
     - name: Checkout source code
