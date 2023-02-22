@@ -1,23 +1,24 @@
 name: Run UI-tests
 
-workflow_dispatch:
-  inputs:
-    simulator:
-      type: choice
-      description: 'Select simulator'
-      required: true
-      default: '["iPhone 11"]'
-      options:
+on:
+  workflow_dispatch:
+    inputs:
+      simulator:
+        type: choice
+        description: 'Select simulator'
+        required: true
+        default: '["iPhone 11"]'
+        options:
         - '["iPhone 11"]'
         - '["iPhone 14 Pro"]'
-    agent:
-      type: choice
-      description: 'Build agent'
-      required: true
-      default: macOS-latest
-      options: 
-      - macOS-latest
-      - self_mac
+      agent:
+        type: choice
+        description: 'Build agent'
+        required: true
+        default: macOS-latest
+        options: 
+        - macOS-latest
+        - self_mac
 
 env:
   LANG: "en_US.UTF-8"
