@@ -48,6 +48,9 @@ jobs:
       with:
         ruby-version: 3.0.5
 
+    - name: Install brew dependencies
+      run: pwd
+
     - name: Install rubygems
       run: pwd
 
