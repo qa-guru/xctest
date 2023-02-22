@@ -32,7 +32,7 @@ jobs:
 
     env:
       TEST_SIMULATOR: ${{ github.event.inputs.simulator  || '["iPhone 11"]' }}
-      ALLURE_PROJECT_ID: ${{ env.TESTOPS_PROJECT_ID }}
+      ALLURE_PROJECT_ID: $TESTOPS_PROJECT_ID
       ALLURE_ENDPOINT: ${{ secrets.TESTOPS_ENDPOINT_URL }}
       ALLURE_TOKEN: ${{ secrets.TESTOPS_TOKEN }}
 
@@ -57,6 +57,11 @@ jobs:
 
     - name: Install rubygems
       run: bundle install
+
+    - name: Print
+      run: |
+        env
+        echo $TESTOPS_PROJECT_ID
 
     # - name: Build app
     #   run: bundle exec fastlane ios build_test_app
