@@ -7,9 +7,9 @@ on:
         type: choice
         description: 'Select simulator'
         required: true
-        default: '["iPhone 11"]'
+        default: '["iPhone 14"]'
         options:
-        - '["iPhone 11"]'
+        - '["iPhone 14"]'
         - '["iPhone 14 Pro"]'
       agent:
         type: choice
@@ -24,8 +24,6 @@ env:
   LANG: "en_US.UTF-8"
   LANGUAGE: "en_US.UTF-8"
   LC_ALL: "en_US.UTF-8"
-
-
 
 jobs:
   all:
@@ -49,16 +47,16 @@ jobs:
         ruby-version: 3.0.5
 
     - name: Install brew dependencies
-      run: pwd
+      run: brew bundle
 
     - name: Install rubygems
-      run: pwd
+      run: bundle install
 
     - name: Build app
-      run: pwd
+      run: bundle exec fastlane build_test_app
 
     - name: Run tests
-      run: pwd
+      run: bundle exec fastlane run_tests
 
     - name: Export test results
       run: pwd
