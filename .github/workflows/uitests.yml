@@ -63,19 +63,19 @@ jobs:
         env
         echo $TESTOPS_PROJECT_ID
 
-    # - name: Build app
-    #   run: bundle exec fastlane ios build_test_app
+    - name: Build app
+      run: bundle exec fastlane ios build_test_app
 
-    # - name: Run tests
-    #   run: bundle exec fastlane ios run_tests
+    - name: Run tests
+      run: bundle exec fastlane ios run_tests
 
     - name: Install xcresult 
       run: |
         wget https://github.com/eroshenkoam/xcresults/releases/latest/download/xcresults
         chmod +x ./xcresults
 
-    # - name: Convert xcresult to allure results
-    #   run: xcresults export ./test.xcresult ./allure-results
+    - name: Convert xcresult to allure results
+      run: xcresults export ./Report/SimpleCalculator.xcresult ./allure-results
 
     - name: Install allurectl 
       run: |
@@ -85,5 +85,5 @@ jobs:
     # - name: Export test results to TestOPS
     #   run: pwd
 
-    # - name: Send slack message 
-    #   run: bundle exec fastlane ios slack_result
+    - name: Send slack message
+      run: bundle exec fastlane ios slack_result slack_url:${{ secrets.SLACK_WEBHOOK_URL }}

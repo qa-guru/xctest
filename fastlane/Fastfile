@@ -1,0 +1,36 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Build app"
+  lane :build_test_app do
+    scan(
+      project: "SimpleCalculator.xcodeproj",
+      scheme: 'SimpleCalculator',
+      derived_data_path: "DDUITest",
+      build_for_testing: true
+    )
+  end
+
+  lane :run_ui_tests do
+    scan(
+      project: "SimpleCalculator.xcodeproj",
+      scheme: 'SimpleCalculator',
+      derived_data_path: "DDUITest",
+      output_directory: "Report",
+      test_without_building: true,
+      result_bundle: true,
+      device: "iPhone 14"
+    )
+  end
+
+  lane :slack_result do |params|
+    slack(
+      message: "Test run was ended",
+      channel: 'test',
+      slack_url: params[:slack_url],
+      username: 'Github Action'
+    )
+  end
+
+end
