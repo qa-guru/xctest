@@ -10,7 +10,7 @@ import XCTest
 
 final class SimpleCalculatorUITests: XCTestCase {
     
-    let app = XCUIApplication()
+    let app = XCUIApplication(bundleIdentifier: "com.github.alexilyenko.SimpleCalculator")
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,27 +26,24 @@ final class SimpleCalculatorUITests: XCTestCase {
     }
 
     func testExample() throws {
-        // UI tests must launch the application that they test.
         app.launch()
         print(app.debugDescription)
     }
     
     func testRecordAndPlay() throws {
-
-        app.launch()
+        XCTContext.runActivity(named: "Запуск приложения") { _ in
+            app.launch()
+        }
         
         XCTContext.runActivity(named: "Складываем 2  и 2") { _ in
             app.buttons["2"].firstMatch.tap()
             app.buttons["+"].firstMatch.tap()
             app.buttons["2"].firstMatch.tap()
             app.buttons["="].firstMatch.tap()
-            
         }
         
-        XCTContext.runActivity(named: "Проверка") { _ in
-            let result = Double(app.staticTexts["4"].firstMatch.label)
-//            XCTAssertEqual(result, 4.0, "Некоректная сумма")
-            XCTAssert(app.staticTexts["4"].firstMatch.waitForExistence(timeout: 10) )
+        XCTContext.runActivity(named: "Проверка итоговой суммы") { _ in
+            XCTAssert(app.staticTexts["4"].firstMatch.waitForExistence(timeout: 10), "Некоректная итоговая сумма")
         }
         
         XCTContext.runActivity(named: "Делаем скриншот") { _ in
@@ -55,13 +52,14 @@ final class SimpleCalculatorUITests: XCTestCase {
             attachment.lifetime = .keepAlways
             add(attachment)
         }
-
     
     }
     
     func testEnableToggle() throws {
         app.launch()
         app.navigationBars["Calculator"].buttons["Settings"].firstMatch.tap()
+        
+//        TODO: Не работает, так как не получается найти правильный локатор (позже поправлю)
         app.switches["switch"].firstMatch.tap()
         
         app.navigationBars["Settings"].buttons["Calculator"].tap()
